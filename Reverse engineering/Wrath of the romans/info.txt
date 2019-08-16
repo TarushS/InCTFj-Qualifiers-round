@@ -1,0 +1,4 @@
+The flag was encrypted using this script using the key 15.
+This is the output : bpztugttsdbaphiiwthidgb
+Reverse the encrption and retrive the flag.
+Please make sure you are using python3 to run the script.

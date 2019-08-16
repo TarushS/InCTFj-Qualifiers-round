@@ -1,0 +1,3 @@
+Answer the binary correctly and you get the flag.
+
+To run the file, refer the reverse engineering portion (gdb) of the wiki.

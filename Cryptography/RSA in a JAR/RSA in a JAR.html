@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>RSA@JAR</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                background: #333;
+                color: #eee;
+                font-family: monospace;
+            }
+            #shell {
+                background: #222;
+                max-width: 800px;
+                margin: 50px auto 0 auto;
+                box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+                font-size: 10pt;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+            }
+            #shell-content {
+                height: 500px;
+                overflow: auto;
+                padding: 5px;
+                white-space: pre-wrap;
+                flex-grow: 1;
+            }
+            #shell-logo {
+                font-weight: bold;
+                color: #FF4180;
+                text-align: center;
+            }
+            @media (max-width: 991px) {
+                #shell-logo {
+                    display: none;
+                }
+                html, body, #shell {
+                    height: 100%;
+                    width: 100%;
+                    max-width: none;
+                }
+                #shell {
+                    margin-top: 0;
+                }
+            }
+            @media (max-width: 767px) {
+                #input-line {
+                    flex-direction: column;
+                }
+            }
+            .shell-prompt {
+                font-weight: bold;
+                color: #75DF0B;
+            }
+            .shell-prompt > span {
+                color: #1BC9E7;
+            }
+            #input-line {
+                display: flex;
+                box-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+                border-top: rgba(255, 255, 255, .05) solid 1px;
+            }
+            #input-line > label {
+                flex-grow: 0;
+                display: block;
+                padding: 0 5px;
+                height: 30px;
+                line-height: 30px;
+            }
+            #input-line #shell-cmd {
+                height: 30px;
+                line-height: 30px;
+                border: none;
+                background: transparent;
+                color: #eee;
+                font-family: monospace;
+                font-size: 10pt;
+                width: 100%;
+                align-self: center;
+            }
+            #input-line div {
+                flex-grow: 1;
+                align-items: stretch;
+            }
+            #input-line input {
+                outline: none;
+            }
+        </style>
+       
+    </head>
+
+    <body>
+
+    <html>
+        <head>
+            <title>RSA <> JAR</title>
+        </head>    
+        <body>
+            
+        <div id="shell">
+            <pre id="shell-content">
+                <div id="shell-logo">
+  ______   ______ _______    _          _______ _______ ______                <span></span>
+(_____ \ / _____|_______)  (_)        (_______|_______|_____ \              <span></span>
+ _____) | (____  _______    _ ____         _   _______ _____) )             <span></span>
+|  __  / \____ \|  ___  |  | |  _ \    _  | | |  ___  |  __  /              <span></span>
+| |  \ \ _____) ) |   | |  | | | | |  | |_| | | |   | | |  \ \              <span></span>
+|_|   |_(______/|_|   |_|  |_|_| |_|   \___/  |_|   |_|_|   |_|             <span></span>
+                                                                          
+#The secure RSA shell  |  Type help to view available fuctions
+
+
+                </div>
+            </pre>
+            <div id="container">
+            
+                <output></output>
+              <div id="input-line">
+                    <label for="shell-cmd" id="shell-prompt" class="shell-prompt">junior@InCTF:~$</label>
+                    <div >
+                        <input id="shell-cmd" class="cmdline" autofocus />
+                    </div>
+              </div>
+            </div>
+            
+            <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+            <script src="js/shell.js"></script>
+
+        </div>
+
+        </body>
+    
+        </html>
+        <script  src="js/index.js"></script>
+    </body>
+
+</html>

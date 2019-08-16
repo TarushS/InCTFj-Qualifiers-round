@@ -1,0 +1,1 @@
+Detective John finds an image and also a suspicious python script in the victim's system. He suspects that there is something hidden in it. Help the detective to find the secret message.

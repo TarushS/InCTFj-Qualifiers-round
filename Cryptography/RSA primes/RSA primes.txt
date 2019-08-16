@@ -1,0 +1,1 @@
+My friend was trying to implement RSA, but instead of choosing random Primes, he did something else. Could this be a mistake?
